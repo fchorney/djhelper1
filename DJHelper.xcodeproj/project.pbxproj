@@ -16,6 +16,7 @@
 		948EEE741381AFFA0066459E /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948EEE721381AFFA0066459E /* TitleViewController.xib */; };
 		949202C5137B196B005813BC /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949202C3137B196B005813BC /* SubViewController.m */; };
 		949202C6137B196B005813BC /* SubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949202C4137B196B005813BC /* SubViewController.xib */; };
+		94AE176A1841BC110075AF02 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AE17691841BC110075AF02 /* libxml2.dylib */; };
 		94CE0BC4137AE00C00B9997E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE0BC3137AE00C00B9997E /* UIKit.framework */; };
 		94CE0BC6137AE00C00B9997E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE0BC5137AE00C00B9997E /* Foundation.framework */; };
 		94CE0BC8137AE00C00B9997E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CE0BC7137AE00C00B9997E /* CoreGraphics.framework */; };
@@ -70,6 +71,7 @@
 		949202C3137B196B005813BC /* SubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
 		949202C4137B196B005813BC /* SubViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubViewController.xib; sourceTree = "<group>"; };
 		949202C8137B2E52005813BC /* DJHelper 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DJHelper 2.xcdatamodel"; sourceTree = "<group>"; };
+		94AE17691841BC110075AF02 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		94CE0BBF137AE00C00B9997E /* DJHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CE0BC3137AE00C00B9997E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94CE0BC5137AE00C00B9997E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,7 +130,6 @@
 		9B5720BD1381F2C500B63545 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9B5720BE1381F2C500B63545 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		9B5720C01381F31900B63545 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		9B5720C11381F31A00B63545 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		9B5720C21381F31A00B63545 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		9B5720C31381F31A00B63545 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B9FBFAA13820CF600EA4519 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AE176A1841BC110075AF02 /* libxml2.dylib in Frameworks */,
 				94CFD26814E4234400E39957 /* libz.1.2.5.dylib in Frameworks */,
 				9B5720C41381F31A00B63545 /* CFNetwork.framework in Frameworks */,
 				9B5720C61381F31A00B63545 /* MobileCoreServices.framework in Frameworks */,
@@ -162,7 +164,6 @@
 		94CE0BB4137AE00C00B9997E = {
 			isa = PBXGroup;
 			children = (
-				94CFD26714E4234400E39957 /* libz.1.2.5.dylib */,
 				94CE0BCB137AE00C00B9997E /* DJHelper */,
 				94CE0BC2137AE00C00B9997E /* Frameworks */,
 				94CE0BC0137AE00C00B9997E /* Products */,
@@ -180,8 +181,9 @@
 		94CE0BC2137AE00C00B9997E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94AE17691841BC110075AF02 /* libxml2.dylib */,
+				94CFD26714E4234400E39957 /* libz.1.2.5.dylib */,
 				9B5720C01381F31900B63545 /* CFNetwork.framework */,
-				9B5720C11381F31A00B63545 /* libz.1.2.3.dylib */,
 				9B5720C21381F31A00B63545 /* MobileCoreServices.framework */,
 				9B5720C31381F31A00B63545 /* SystemConfiguration.framework */,
 				948EEE6D1381AAA20066459E /* MessageUI.framework */,
@@ -555,8 +557,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DJHelper/DJHelper-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "DJHelper/DJHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -571,8 +577,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DJHelper/DJHelper-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/include/libxml2/**",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "DJHelper/DJHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
